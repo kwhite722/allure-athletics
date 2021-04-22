@@ -1,0 +1,25 @@
+.banner {
+  width : 50%;
+ }
+ .bannercenter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ .center {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   width : 25%;
+ }
+ .item {
+   width : 50%;
+ }
+ .photorow {
+   display: flex;
+   justify-content: space-evenly;
+   width : 100%;
+ }
+ .wrap {
+  flex-wrap: wrap;
+}
