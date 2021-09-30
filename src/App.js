@@ -20,38 +20,50 @@ function Photo({ src, price }) {
 function App() {
   const [hidden, setHidden] = useState("Home");
   const items = [
-    { image: "Pink0.png" , price: 25},
-    { image: "BlueHaze.png" , price: 50},
+    { image: "Pink0.png" , price: 28},
+    { image: "BlueHaze.png" , price: 28},
     { image: "PinkBrush.png" , price: 28},
-    { image: "ConcreteRose.png" , price: 100},
-    { image: "purpleHaze.png" , price: 2},
-    { image: "Fire.png" , price: 10},
-    { image: "LoveLetter.png" , price: 15},
-    { image: "Pinklace.png" , price: 30},
-    { image: "GreenLeaves.png" , price: 5},
+    { image: "ConcreteRose.png" , price: 28},
+    { image: "purpleHaze.png" , price: 28},
+    { image: "Fire.png" , price: 28},
+    { image: "LoveLetter.png" , price: 28},
+    { image: "Pinklace.png" , price: 28},
+    { image: "GreenLeaves.png" , price: 28},
+    { image: "Smoke.png" , price: 28},
+    { image: "RainbowBraids.png" , price: 28},
+    { image: "GreenHaze.png" , price: 28},
   ];
   return (
     <header className="App-header">
       <div className="bannercenter">
-        <img className="banner" src="alllureathleticsbanner.png" />
+        <img className="banner" src="allureathleticsbanner.png" />
       </div>
-      <Button
+      <Button id="newInBtn"
         onClick={() => {
-          setHidden("About");
+          setHidden("AboutNew");
         }}
         variant="contained"
         color="primary"
       >
-        About
+        NEW IN
       </Button>
-      <Button
+      <Button id="leggingsBtn"
         onClick={() => {
           setHidden("Contact");
         }}
         variant="contained"
         color="primary"
       >
-        Contact
+        LEGGINGS
+      </Button>
+      <Button id="cropHoodiesBtn"
+        onClick={() => {
+          setHidden("AboutNew");
+        }}
+        variant="contained"
+        color="primary"
+      >
+      CROP HOODIES
       </Button>
       {hidden === "Home" && (
         <div className="photorow wrap">
